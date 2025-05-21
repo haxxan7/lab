@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+
+    }
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border: 15px;
+      box-shadow: 0 8px 16px rgba( 0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px
+      }
+      .form-container h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #976c6c;
+      }
+      .form-group {
+        margin: 20px;
+      }
+      .form-group label {
+        display: rectangle;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+      .form-group input{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        transition: border 0.3s;
+      }
+      .form-group input:focus{
+               border-color: #ccc;
+
+      }
+      .submit-btn{
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: blueviolet;
+        border: none;
+        border: 7px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .submit-btn:hover{
+        background-color: #0056b3;
+      }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+  </div>
+  <h3>REGISTRATION FORM</h3>
+  <form>
+    <div class="form-group">
+        <label for="name" >Full Name</label>  
+        <input type="text" placeholder="Enter your Full Name" required></div>
+        <div class="form-group">   
+        <label for=" father name">Father Name</label> 
+        <input type="text" placeholder="Enter your Father Name" required></div>
+        <div class="form-group">
+        <label for="Mobile No.">Mobile No.</label>
+        <input type="text" placeholder="Enter your Mobile No." required></div>
+        <div class="form-group">
+        <label for="title-Email Address">Email Address</label>
+        <input type="text" placeholder="Enter your Email Address" required></div>
+        <div class="form-group">
+        <label for="Password">Password</label>
+        <input type="text" placeholder="Enter your Password" required></div>
+        <label for="Confirm Password">Confirm Password</label>
+        <input type="text" placeholder="Enter your Confirm Password" required></div>
+        <div class="form-group">
+        <label for="Gender">Gender</label><br>
+          <label for="Male" class="slide Male">Male</label> <input type="radio" name="slide" id="Male" checked><br>
+          <label for="Female" class="slide Female">Female</label>  <input type="radio" name="slide" id="Female"><br>
+          <label for="Prefer not to say" class="slide Prefo say">Prefer not to say</label> <input type="radio" name="slide" id="Prefer not to say"><br>
+          <div class="slider-tab"></div>
+          <div class="btn-layer"></div>
+         <button type="submit" onclick="REGISTER">REGISTER</button>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
